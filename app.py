@@ -14,7 +14,12 @@ app.config['SECRET_KEY'] = "secret"
 def prompt():
     """ prompt user for words"""
     prompts = silly_story.prompts
-    print(prompts)
+   
     return render_template("questions.html", prompts=prompts)
 
-@app.route('/story.html')
+# @app.route('/story')
+# def generateStory():
+#     """generate story from prompt inputs"""
+
+
+#     return render_template("story.html", )
