@@ -23,5 +23,5 @@ def generateStory():
     """generate story from prompt inputs"""
 
     story = silly_story.generate(request.args)
-    print()
+
     return render_template("story.html", story=story)
